@@ -1,4 +1,4 @@
-from flask import Flask, request, abort
+﻿from flask import Flask, request, abort
 import configparser
 import os
 from bs4 import BeautifulSoup
@@ -26,8 +26,8 @@ config.read("config.ini")
 # album_id = config['imgur_api']['Album_ID']
 # API_Get_Image = config['other_api']['API_Get_Image']
 
-line_bot_api = LineBotApi(os.environ['sKPgfSmhQKvcGedV82T6rKwZoNi3F7VeIrRREztQ+4NUcOdLnZbEJ+WsACgqgFOImeKgQXRqdb4feAod4CsA0kIp1jqfYivp3im0XA8oCdHebzUIn704Lykb4r5qbuOEYzZELCEo8He7dw/xqNCjsAdB04t89/1O/w1cDnyilFU='])
-handler = WebhookHandler(os.environ['2ed1665107445c1f606a0193a501cc51'])
+line_bot_api = LineBotApi(os.environ['5IqoUC5/mYaKcaHeVzOoZ3uT1hqDbsi9Rn2QTvs/Navq75jJFeVeTTeyTqDqcqImmeKgQXRqdb4feAod4CsA0kIp1jqfYivp3im0XA8oCdFPfBv0cjC28TKEZwfxObo9Tj6L9zTk/+vUDgJgkeQadQdB04t89/1O/w1cDnyilFU='])
+handler = WebhookHandler(os.environ['8b4c7651c6a4274aa6218303ad38e132'])
 google_api_key = os.environ['AIzaSyDAifsloe1gYIyVNUO8rcqizqHxKuoLQB4']
 line_reply_api = 'https://api.line.me/v2/bot/message/reply'
 

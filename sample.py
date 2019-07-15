@@ -49,11 +49,11 @@ def handle_message(event):
 #     line_bot_api.reply_message(
 #         event.reply_token,
 #         TextSendMessage(text=event.message.text))
-      message = StickerSendMessage(
+    message = StickerSendMessage(
             package_id='1',
             sticker_id=sticker_id
         )
-      line_bot_api.reply_message(event.reply_token, message)
+    line_bot_api.reply_message(event.reply_token, message)
 
 
 

@@ -21,9 +21,8 @@ from linebot.models import (
 app = Flask(__name__)
 
 # 使用heroku的environment variables
-line_bot_api = LineBotApi(os.environ['sKPgfSmhQKvcGedV82T6rKwZoNi3F7VeIrRREztQ+4NUcOdLnZbEJ+WsACgqgFOImeKgQXRqdb4feAod4CsA0kIp1jqfYivp3im0XA8oCdHebzUIn704Lykb4r5qbuOEYzZELCEo8He7dw/xqNCjsAdB04t89/1O/w1cDnyilFU='])
-handler = WebhookHandler(os.environ['2ed1665107445c1f606a0193a501cc51'])
-
+line_bot_api = LineBotApi(os.environ['CHANNEL_ACCESS_TOKEN'])
+handler = WebhookHandler(os.environ['CHANNEL_SECRET'])
 
 @app.route("/callback", methods=['POST'])
 def callback():
